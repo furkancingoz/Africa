@@ -13,7 +13,7 @@ struct InsetFactView: View {
       GroupBox {
         TabView{
           ForEach(animal.fact, id: \.self) { item in
-            Text(item)
+            Text(item)  
           }
         }
         .tabViewStyle(PageTabViewStyle())
