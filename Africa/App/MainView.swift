@@ -20,11 +20,11 @@ ContentView()
                     Image(systemName: "play.rectangle")
                     Text("Watch")
                   }
-        MapView()
-                  .tabItem {
-                    Image(systemName: "map")
-                    Text("Locations")
-                  }
+//        MapView()
+//                  .tabItem {
+//                    Image(systemName: "map")
+//                    Text("Locations")
+//                  }
         GalleryView()
                   .tabItem {
                     Image(systemName: "photo")
