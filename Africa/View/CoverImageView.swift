@@ -10,14 +10,16 @@ import SwiftUI
 struct CoverImageView: View {
 
   //MARK: PROPERTIES
+  let coverImages:[CoverImage] = Bundle.main.decode("covers.json") //make sure you have the correct file name
+
 
   //MARK: BODY
   var body: some View {
     TabView{
-      ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-        Image("cover-lion")
+      ForEach(coverImages) { item in
+        Image(item.name)
           .resizable()
-        .scaledToFit()
+        .scaledToFill()
       }//: Loop
     }//: Tab
     .tabViewStyle(PageTabViewStyle())
