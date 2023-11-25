@@ -21,10 +21,9 @@ CoverImageView()
             .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
 
           ForEach(animals) { animal in
-            AnimalListItemView(animal: animal)
-
-              .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
-              
+            NavigationLink(destination: AnimalDetailView(animal: animal)) {
+              AnimalListItemView(animal: animal)
+            } //: LINK
           }
 
         }//: list

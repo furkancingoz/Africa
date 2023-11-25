@@ -42,7 +42,10 @@ HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness 
           .padding(.horizontal)
 
           //FACTS
-
+          Group{
+            HeadingView(headingImage: "questionmark.circel", headingText: "Did you know?")
+            InsetFactView(animal: animal)
+          }
 
           //DESCRIPTION
 
@@ -62,7 +65,7 @@ struct AnimalDetailView_Previews: PreviewProvider {
   static let animals: [Animal] = Bundle.main.decode("animals.json")
 
   static var previews: some View {
-    AnimalDetailView(animal: animals[3])
+    AnimalDetailView(animal: animals[2])
   }
 }
 
