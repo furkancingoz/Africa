@@ -25,11 +25,11 @@ ContentView()
 //                    Image(systemName: "map")
 //                    Text("Locations")
 //                  }
-        GalleryView()
-                  .tabItem {
-                    Image(systemName: "photo")
-                    Text("Gallery")
-                  }
+//        GalleryView()
+//                  .tabItem {
+//                    Image(systemName: "photo")
+//                    Text("Gallery")
+//                  }
       }//: TAB
     }
 }
